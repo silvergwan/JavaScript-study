@@ -18,3 +18,5 @@ console.log(admin);
 // admin = name;
 
 // console.log(admin);
+
+// 이런 간단한 상황에서는 두개를 동시에 선언할 수 있지만 장기적으로 보았을 때는 좋지 않은 것 같다, 내 코드가 짱.
