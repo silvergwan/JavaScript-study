@@ -26,3 +26,5 @@ console.log(`hello ${"name"}`); // hello name
 
 // 표현식 안에 변수가 들어가 있기 때문에, 이 변수가 평가되어 전체 문자열이 반환됩니다.
 console.log(`hello ${namee}`); // hello 은관
+
+// 정답 맞췄습니다!
