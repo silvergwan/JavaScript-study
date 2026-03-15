@@ -34,6 +34,8 @@ function pow(x, n) {
     result *= x;
   }
 
+  // 해답 코드는 반복문 사용함.
+
   return result;
 }
 
