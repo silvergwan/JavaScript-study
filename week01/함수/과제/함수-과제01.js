@@ -17,7 +17,7 @@ function checkAge(age) {
 // - 물음표 연산자 ?를 사용하여 본문을 작성
 // - OR 연산자 ||를 사용하여 본문을 작성
 
-// 내 해답
+// 내 정답 :
 
 function checkAge(age) {
   age > 18 ? true : console.log("보호자의 동의를 받으셨나요?");
@@ -33,10 +33,13 @@ function checkNai(age) {
 
 // 삼항 연산자, 좋아보임
 function checkAge(age) {
-  return age > 18 ? true : confirm("보호자의 동의를 받으셨나요?");
+  return age > 18 ? true : console.log("보호자의 동의를 받으셨나요?");
 }
 
 // OR(||)이 짧기는 한데 , 한 눈에 들어오지는 않음
 function checkAge(age) {
-  return age > 18 || confirm("보호자의 동의를 받으셨나요?");
+  return age > 18 || console.log("보호자의 동의를 받으셨나요?");
 }
+
+checkAge(19);
+checkAge(17);
