@@ -7,4 +7,4 @@ const transfer = function (amount) {
 const transferr = (amount) => amount + "원 송금";
 
 // 인자 하나면 괄호도 생략
-const transferrr = (amount) => amount + "원 송금";
+const transferrr = amount => amount + "원 송금";
