@@ -1,21 +1,16 @@
-const phone = "010-1234-5678";
+const getPhoneFortune = (phone) => {
+  const extractNum = phone.replace(/[^0-9]/g, "");
 
-const extractNum = phone.replace(/[^0-9]/g, "");
+  const splitNum = extractNum.split("");
 
-console.log(extractNum);
+  const changeNum = splitNum.map(Number);
 
-console.log(typeof extractNum);
+  const sum = changeNum.reduce((sum, currentNum) => sum + currentNum, 0);
 
-const splitNum = extractNum.split("");
+  const fortune = FORTUNES[sum];
 
-const changeNum = splitNum.map(Number);
-
-console.log(splitNum);
-console.log(changeNum);
-
-const sum = changeNum.reduce((sum, currentNum) => sum + currentNum, 0);
-
-console.log(sum);
+  return fortune || "유효한 전화번호를 입력해주세요";
+};
 
 const FORTUNES = {
   1: {
@@ -157,5 +152,4 @@ const FORTUNES = {
   73: { title: "새로운 사이클 ♻️", text: "끝이 아니라 또 다른 시작입니다." },
 };
 
-const fortune = FORTUNES[sum];
-console.log(fortune || "유효한 전화번호를 입력해주세요");
+console.log(getPhoneFortune("010-9999-9999"));
