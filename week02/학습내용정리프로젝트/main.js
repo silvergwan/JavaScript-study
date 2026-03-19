@@ -6,6 +6,10 @@ const fortuneText = document.getElementById("fortuneText");
 
 submitBtn.addEventListener("click", () => {
   const phone = phoneInput.value;
-  //   const fortune = getPhoneFortune(phone);
-  console.log(phone);
+  const fortune = getPhoneFortune(phone);
+
+  fortuneTitle.textContent = fortune.title;
+  fortuneText.textContent = fortune.text;
+
+  result.style.display = "block";
 });
