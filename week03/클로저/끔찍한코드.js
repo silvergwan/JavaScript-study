@@ -7,3 +7,5 @@ function deposit(amount) {
 function withdraw(amount) {
   balance -= amount;
 }
+
+// let balance = 0; 때리면 한순간에 잔액 삭제
